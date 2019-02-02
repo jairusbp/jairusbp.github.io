@@ -1,0 +1,48 @@
+
+
+header {
+	margin: 10px auto;
+	background-color: #76BED0;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+    
+}
+
+nav {
+    font-family: Arial;
+    color: white;
+}
+
+main{
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+
+}
+
+#first-div {
+    line-height: 1px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: Georgia;
+}
+
+p {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+	background-color: #bbb;
+}
+
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
