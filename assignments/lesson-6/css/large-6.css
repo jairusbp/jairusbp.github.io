@@ -1,0 +1,35 @@
+@media only screen and (min-width: 45em){
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-right: 25%;
+        padding-left: 25%;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+
+      .disappear {
+        display: inline;
+    }
+
+.navigation li:first-child { display: none;	}
+.navigation li { display: inline-block; margin-right: 1rem;}	
+.navigation li a { color:white;}
