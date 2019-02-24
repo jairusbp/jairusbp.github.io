@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title> Preston | CIT 230 Assignment Portal | Jairus B. Purisima | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Jairus B. Purisima in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Slabo+27px" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
+    </head>
+
+    <body>
+        <header>
+         <div id="first-div">
+            <img id="logo" src="images/sun.jpg" alt="logo">
+            <h1>Weather You Like It Or Not</h1>
+            <div class="motto"><h2>Might as well be prepared!</h2></div>
+         </div>
+         <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                <h2>Preston, Idaho</h2>
+                <div class="herodiv">
+                    <picture>
+                        <source srcset="images/hero/hero-default800.jpg" media="(min-width: 500px) and (max-width:799px)">
+                        <source srcset="images/hero/hero-large1200.jpg" media="(min-width: 800px)">
+                    <img src="images/hero/hero-small400.jpg" alt="Idaho" width="100%">
+                    </picture>
+                    <section class="stats">
+                        <h3>Weather Summary</h3>
+                        <p>Current: Sunny <span id="value1">Value</span></p>
+                        <p>High: <span id="inputTemp">76</span>&deg;F</p>
+                        <p>Wind Chill: <span id="output"></span> &deg;F</p>
+                        <p>Humidity: 69%</p>
+                        <p> Wind Speed:<span id="inputSpeed">25mph</span></p>
+                    </section>
+                </div>
+                <br>
+                <div class="disappear">
+                    <h2>Five-Day Forecast</h2>
+                    
+                    <table>
+                    <tr>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                    </tr>
+                    <tr>
+                    <td>
+                        <img src="images/sun-icon.png" alt="sun icon" width="50">
+                        <p>89&deg;F</p>
+                    </td>
+                    <td>
+                        <img src="images/sun-icon.png" alt="sun icon" width="50">
+                        <p>87&deg;F</p>
+                    </td>
+                    <td>
+                        <img src="images/sun-icon.png" alt="sun icon" width="50">
+                        <p>78&deg;F</p>
+                    </td>
+                    <td>
+                        <img src="images/sun-icon.png" alt="sun icon" width="50">
+                        <p>75&deg;F</p>
+                    </td>
+                    <td>
+                        <img src="images/sun-icon.png" alt="sun icon" width="50">
+                        <p>72&deg;F</p>
+                    </td>
+                    </tr>
+                    </table>
+                 </div>
+                <br>
+                <div id="article">
+                    <h2> Beautiful Preston, Idaho</h2>
+                    <img id="hiking" src="images/hiking.jpg" alt="guy hiking" width=400>
+
+                <div class="tiririt">
+                    <p>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.</p>
+                    <br>
+                    <p>The Bear River Massacre occurred in 1863 at a point a few miles northwest of Preston. The Bear River Massacre Site is a National Historic Landmark. In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah. They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected to the name "Worm Creek" being part of any church congregation's name.The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake.</p>
+                    <br>
+                    <p>It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.</p>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Continue reading here...</a>
+                </div>
+                </div>
+
+                <br>
+            <aside>
+                <div id="anes">
+                <p><b>Weather You Like It Or Not</b></p>
+                <p><b>Location:</b> 30N 1st E</p>
+                <p>Preston, ID 83262</p>
+                <p><b>Phone:</b> 999.999.9999</p>
+                <p><b>Email:</b> weatheryoulikeitornot@wylion.com.au</p> 
+                </div>
+                <div id="map" ></div><br>
+            </aside>
+        </main>
+                
+            <footer>
+                <p>&copy;2019 Weather You Like It Or Not &#124; Brigham Young University-Idaho &#124; Jairus B. Purisima<br><span id="currentDate"></span><br></p>
+            </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/map.js"></script>
+            <script src="scripts/windchill.js"></script>
+            <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+</script>
+    </body>
+</html>
