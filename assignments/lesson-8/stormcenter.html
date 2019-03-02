@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title> Storm Center | CIT 230 Assignment Portal | Jairus B. Purisima | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Jairus B. Purisima in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cAmatic+SC%7cSlabo+27px" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-8.css">
+        <link rel="stylesheet" href="css/medium-8">
+        <link rel="stylesheet" href="css/large-8.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="first-div">
+                <img id="logo" src="images/sun.jpg" alt="logo">
+                <h1>Weather You Like It Or Not</h1>
+                <div class="motto"><h2>Might as well be prepared!</h2></div>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Storm Center</h1>
+            <form action="thanks.html" target="_blank">
+                <fieldset>
+                    Full Name (Required): <input type="text" name="fullname" required>
+                    <br>
+                    Email Address: <input type="email" name="emailaddress" placeholder="example@domain.com"><br>
+                    Phone Number (Required): <input type="tel" name="phonenumber" required>
+                    <br>
+                    Zip Code (Required): <input type="number" name="zipcode" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    Storm Date: <input type="date" name="dt">
+                    <br>
+                    Storm Type: <input name="stype" list="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                        <br>
+                    Storm Severity: 
+                        <input type="range" name="severity" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    <br>
+                        Storm Region: 
+                        <select name="region">
+                            <option >--Select Region--</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                        <br>
+                    Are you in danger? 
+                        <input type="radio" name="danger" value="yes">Yes
+                        <input type="radio" name="danger" value="no" checked>No
+                        <input type="radio" name="danger" value="maybe">Maybe
+                    
+                    <br>
+                    <br>
+
+                    Additional Information or Comments:<br>
+                    <textarea name="comments" rows="4" cols="40"></textarea>
+                </fieldset>
+                    <br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br>
+            <br>
+        
+            <aside>
+                <div id="anes">
+                <p><b>Weather You Like It Or Not</b></p>
+                <p><b>Location:</b> 30N 1st E</p>
+                <p>Preston, ID 83262</p>
+                <p><b>Phone:</b> 999.999.9999</p>
+                <p><b>Email:</b> weatheryoulikeitornot@wylion.com.au</p> 
+                </div>
+                <div id="map" ></div><br>
+            </aside>
+        </main>
+                
+            <footer>
+                <p>&copy;2019 Weather You Like It Or Not &#124; Brigham Young University-Idaho &#124; Jairus B. Purisima<br><span id="currentDate"></span><br></p>
+            </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/rating.js"></script>
+            <script src="scripts/map.js"></script>
+            <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+</script>
+    </body>
+</html>
