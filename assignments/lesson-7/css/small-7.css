@@ -144,6 +144,12 @@ footer {
 
 aside {
     background-color:#333;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+
+
 }
 #anes {
     color: white;
@@ -178,7 +184,8 @@ main picture.bwiset {
 div#map {
     width:320px;
     height:150px;
-    margin-left: 3em;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 
