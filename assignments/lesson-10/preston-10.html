@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title> Preston | CIT 230 Assignment Portal | Jairus B. Purisima | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Jairus B. Purisima in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cAmatic+SC%7cSlabo+27px" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-10.css">
+        <link rel="stylesheet" href="css/large-10.css">
+    </head>
+
+    <body>
+        <header>
+         <div id="first-div">
+            <img id="logo" src="images/sun.jpg" alt="logo">
+            <h1>Weather You Like It Or Not</h1>
+            <div class="motto"><h2>Might as well be prepared!</h2></div>
+         </div>
+         <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                <h2>Preston, Idaho</h2>
+                <div class="herodiv">
+                    <picture>
+                        <source srcset="images/hero/hero-default800.jpg" media="(min-width: 500px) and (max-width:799px)">
+                        <source srcset="images/hero/hero-large1200.jpg" media="(min-width: 800px)">
+                    <img id="akona" src="images/hero/hero-small400.jpg" alt="Idaho">
+                    </picture>
+                    <div class="stats">
+                        <h3>Weather Summary</h3>
+                        <br>
+                        <p>Current:<span id="current-weather"></span></p>
+                        <p>High: <span id="high-temp"></span>&deg;F</p>
+                        <p>Wind Chill: <span id="windChill"></span> &deg;F</p>
+                        <p>Humidity: <span id="current-humidity"></span>&#37;</p>
+                        <p> Wind Speed:<span id="current-windSpeed"></span> mph</p>
+                    </div>
+                </div>
+                <br>
+                <div class="disappear">
+                    <h2>Five-Day Forecast</h2>
+                    <br>
+                    <table>
+                    <tr>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
+                    </tr>
+                    <tr>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon1" alt="" width="75">
+                        <p><span id="temp1"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon2"  alt="" width="75">
+                        <p><span id="temp2"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon3" alt="" width="75">
+                        <p><span id="temp3"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon4"  alt="" width="75">
+                        <p><span id="temp4"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon5" alt=" " width="75">
+                        <p><span id="temp5"></span>&deg;F</p> 
+                    </td>
+                    </tr>
+                    </table>
+                 </div>
+                <br>
+
+                    <article>
+                    </article>
+                
+                <br>
+                <div id="news">
+                    <h2> Beautiful Preston, Idaho</h2>
+                    <img id="hiking" src="images/hiking.jpg" alt="guy hiking" width=400>
+
+                <div class="tiririt">
+                    <p>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.</p>
+                    <br>
+                    <p>The Bear River Massacre occurred in 1863 at a point a few miles northwest of Preston. The Bear River Massacre Site is a National Historic Landmark. In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah. They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected to the name "Worm Creek" being part of any church congregation's name.The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake.</p>
+                    <br>
+                    <p>It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.</p>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Continue reading here...</a>
+                </div>
+                </div>
+                <br>
+
+            <aside>
+                <div id="anes">
+                <p><b>Weather You Like It Or Not</b></p>
+                <p><b>Location:</b> 30N 1st E</p>
+                <p>Preston, ID 83262</p>
+                <p><b>Phone:</b> 999.999.9999</p>
+                <p><b>Email:</b> weatheryoulikeitornot@wylion.com.au</p> 
+                </div>
+                <div id="map" ></div><br>
+            </aside>
+        </main>
+                
+            <footer>
+                <p>&copy;2019 Weather You Like It Or Not &#124; Brigham Young University-Idaho &#124; Jairus B. Purisima<br><a href="https://openweathermap.org/">OpenWeatherMap</a><br><span id="currentDate"></span><br></p>
+            </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/map.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <script src="scripts/forecast.js"></script>
+            <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+</script>
+
+        <script>
+            var article=document.querySelector('article');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+                request.onload = function() {
+                var townPage = request.response;
+                showTowns(townPage);
+            }
+
+            function showTowns(jsonObj) {
+                var idaho = jsonObj['towns'];
+                
+                for (var i = 4; i < idaho.length; i++) {
+                    if (i === 5) {
+                    break;
+                    }
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = idaho[i].name;
+                myPara1.textContent = 'List of Official Events in Preston, Idaho:';
+
+                var specialEvents = idaho[i].events;
+                for (var j = 0; j < specialEvents.length; j++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = specialEvents[j];
+                myList.appendChild(listItem);
+            }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myList);
+
+                article.appendChild(myArticle);
+  }
+                
+                }
+        </script>
+    </body>
+</html>

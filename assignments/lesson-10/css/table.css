@@ -1,0 +1,30 @@
+table, th, td {
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    width: 300px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 7px;
+}
+
+td {
+    background-color: #e7ffed;
+}
+
+.ff {
+    background-color: #628ca6;
+    color: white;
+
+}
+
+thead, tfoot {
+    background-color: #7fb9c2;
+}
+
+thead {
+    font-size:20pt;
+}
+
+tfoot {
+    font-size: 10pt;
+}
