@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title> Soda Springs| CIT 230 Assignment Portal | Jairus B. Purisima | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Jairus B. Purisima in CIT 230: Web Front-End Development at Brigham Young University-Idaho">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cAmatic+SC%7cSlabo+27px" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+        <header>
+         <div id="first-div">
+            <img id="logo" src="images/sun.jpg" alt="logo">
+            <h1>Weather You Like It Or Not</h1>
+            <div class="motto"><h2>Might as well be prepared!</h2></div>
+         </div>
+         <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                <h2>Soda Springs, Idaho</h2>
+                <div class="herodiv">
+                    <picture>
+                        <source srcset="images/hero/sodasprings_medium800.jpg" media="(min-width: 500px) and (max-width:799px)">
+                        <source srcset="images/hero/sodasprings_large1200.jpg" media="(min-width: 800px)">
+                    <img id="akona" src="images/hero/sodasprings_small400.jpg" alt="Soda Springs">
+                    </picture>
+                    <div class="stats">
+                        <h3>Weather Summary</h3>
+                        <p>Current:<span id="current-weatherSS"></span></p>
+                        <p>Temperature: <span id="high-tempSS"></span>&deg;F</p>
+                        <p>Humidity: <span id="current-humiditySS"></span>&#37;</p>
+                        <p> Wind Speed:<span id="current-windSpeedSS"></span> mph</p>
+                        <p>Wind Chill: <span id="windChillSS"></span> &deg;F</p>
+                    </div>
+                </div>
+                <br>
+                <div class="disappear">
+                    <h2>Five-Day Forecast</h2>
+                    <br>
+                    <table>
+                    <tr>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
+                    </tr>
+                    <tr>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon1" alt="" width="75">
+                        <p><span id="temp1"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon2"  alt="" width="75">
+                        <p><span id="temp2"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon3" alt="" width="75">
+                        <p><span id="temp3"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon4"  alt="" width="75">
+                        <p><span id="temp4"></span>&deg;F</p> 
+                    </td>
+                    <td>
+                        <img src="scripts/forecast.js" id="icon5" alt=" " width="75">
+                        <p><span id="temp5"></span>&deg;F</p> 
+                    </td>
+                    </tr>
+                    </table>
+                 </div>
+                <br>
+                        <article>
+                        </article>
+                <br>
+                <div id="news">
+                    <h2> Largest Man-Tamed Geyser</h2>
+                    <p class="byline">Field Review by RoadsideAmerica.com</p>
+                    <img id="hiking" src="images/soda.jpg" alt="soda springs" width=400>
+                    
+                <div class="tiririt">
+                    
+                    <p>The only attraction in Soda Springs is a unique semi-unnatural feature downtown -- a geyser. It's been there, ready to blast skyward, since 1937 when a local man drilling in search of heated water for a swimming pool penetrated an underground chamber 315 feet down. It was filled with pressurized carbon dioxide gas and water, reaching the surface with a temperature of 84 degrees Fahrenheit and a lot of nervous energy.</p>
+                    <br>
+                    <p>The problem was, in contrast to Mother Earth's occasionally well-timed hydramatics -- think Yellowstone's Old Faithful -- this geyser didn't know when to quit. It would spray continuously if allowed, and might eventually exhaust itself. Then what would the town of Soda Springs do with itself?</p>
+                    <br>
+                    <p>The Man-made Geyser is now "regulated." A cap prevents it from performing except when scheduled by Man (which is generally every hour on the hour). On windless days, the geyser is reported to reach heights between 100 and 150 feet.</p>
+                    <br>
+                    <a href="https://www.roadsideamerica.com/story/8509">Continue reading here...</a>
+                </div>
+                </div>
+                <br>
+
+            <aside>
+                <div id="anes">
+                    <h3>Weather You Like It Or Not</h3>
+                    <p><b>Location:</b> 30N 1st Preston, ID 83262</p>
+                    <p><b>Phone:</b> (541) 754-3010</p>
+                    <p><b>Email:</b> info@weatheryoulikeit.com</p> 
+                    <br>
+                    <div>
+                        <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram icon"></a>
+                    </div> 
+                </div>
+                <div id="map" ></div><br>
+            </aside>
+        </main>
+                
+            <footer>
+                <p>&copy;2019 Weather You Like It Or Not &#124; Brigham Young University-Idaho &#124; Jairus B. Purisima<br><a href="https://openweathermap.org/">OpenWeatherMap</a><br><span id="currentDate"></span><br></p>
+            </footer>
+
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/hamburger.js"></script>
+            <script src="scripts/map.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <script src="scripts/forecastSS.js"></script>
+            <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+</script>
+
+        <script>
+            var article=document.querySelector('article');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+                request.onload = function() {
+                var townPage = request.response;
+                showTowns(townPage);
+            }
+
+            function showTowns(jsonObj) {
+                var idaho = jsonObj['towns'];
+                
+                for (var i = 5; i < idaho.length; i++) {
+                    if (i === 6) {
+                    break;
+                    }
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = idaho[i].name;
+                myPara1.textContent = 'List of Official Events in Soda Springs, Idaho:';
+
+                var specialEvents = idaho[i].events;
+                for (var j = 0; j < specialEvents.length; j++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = specialEvents[j];
+                myList.appendChild(listItem);
+            }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myList);
+
+                article.appendChild(myArticle);
+  }
+                
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+@media only screen and (min-width: 45em) {
+    div.weatherGallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+}
+  
+  section p{
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  section img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 1rem auto;  max-width: 1048px;
+    width:200px;
+  }
+
+  article p {
+    text-align: center;
+  }
+  
+  article ul {
+    font-family: Arial;
+    background-color: white;
+    text-align: center;
+    margin: 1rem auto;  max-width: 1048px;
+    width:300px;
+  }
+
+  .byline {
+    text-align: center;
+    font-size: 11pt;
+  }
+}
+
