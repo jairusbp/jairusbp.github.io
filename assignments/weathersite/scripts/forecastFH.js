@@ -21,7 +21,7 @@ forecastRequest.onload =  function () {
 		var findDate = weekday[date.getDay()] + "<br>" + month[date.getMonth()] + ' ' + date.getDate();
 		listDate.push(findDate);
 
-		var temz = forecastData.list[i].main.temp;
+		var temz = forecastData.list[i].main.temp_max;
 		var temz = Math.round(temz);
 		listTemperature.push(temz);
 
