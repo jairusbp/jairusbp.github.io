@@ -1,5 +1,10 @@
 @media only screen and (min-width: 60em){
-      
+ 
+  .active {
+    background-color: rgb(45, 109, 182);
+    color: white;
+  }
+  
   nav ul li {
     float: left;
   }
@@ -107,6 +112,7 @@ article ul {
   text-align: center;
   margin: 1rem auto;  max-width: 1048px;
   width:300px;
+  list-style: none;
 }
 
 .byline {

@@ -7,14 +7,18 @@ weatherRequest.onload =  function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log (weatherData);
 
+    
     document.getElementById('high-temp').innerHTML=weatherData.main.temp;
     document.getElementById('current-humidity').innerHTML=weatherData.main.humidity;
     document.getElementById('current-windSpeed').innerHTML=weatherData.wind.speed;
     document.getElementById('current-weather').innerHTML=weatherData.weather[0].main;
+    
 
     var wChill = Math.round((0.0817*(3.71*(Math.pow(weatherData.wind.speed, 0.5))+5.81-0.25*weatherData.wind.speed)*(weatherData.main.temp_max-91.4)+91.4));
     
     document.getElementById('windChill').innerHTML=wChill;
+
+    document.getElementById('wind-direction').innerHTML=weatherData.wind.deg;
 }
 
 
@@ -36,6 +40,8 @@ weatherRequestFH.onload =  function () {
     var wChillFH = Math.round((0.0817*(3.71*(Math.pow(weatherDataFH.wind.speed, 0.5))+5.81-0.25*weatherDataFH.wind.speed)*(weatherDataFH.main.temp_max-91.4)+91.4));
     
     document.getElementById('windChillFH').innerHTML=wChillFH;
+
+    document.getElementById('wind-directionFH').innerHTML=weatherDataFH.wind.deg;
 }
 
 
@@ -57,4 +63,5 @@ weatherRequestSS.onload =  function () {
     var wChillSS = Math.round((0.0817*(3.71*(Math.pow(weatherDataSS.wind.speed, 0.5))+5.81-0.25*weatherDataSS.wind.speed)*(weatherDataSS.main.temp_max-91.4)+91.4));
     
     document.getElementById('windChillSS').innerHTML=wChillSS;
+    document.getElementById('wind-directionSS').innerHTML=weatherDataSS.wind.deg;
 }

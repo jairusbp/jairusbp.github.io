@@ -5,7 +5,12 @@
         grid-template-rows: auto;
         justify-items: center;
 }
-  
+
+.active {
+  background-color: rgb(45, 109, 182);
+  color: white;
+}
+
   section p{
     font-size: 11pt;
     text-align: center;
