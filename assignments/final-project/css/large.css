@@ -106,28 +106,32 @@ aside {
     font-family: 'Alegreya', serif;
     text-align: center;
     font-size: 18pt;
-    margin-left: 15em;
-    margin-right: 15em;
+    margin-left: 10em;
+    margin-right: 10em;
     margin-top: 1px;
 }
 
 .norm {box-shadow: 0 0 20px #333;
-    display: grid;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 
 .oden-info {
     font-family: 'Roboto', sans-serif;
     font-size: 13pt;
-    margin-left: 4em;
-    margin-top: 2em;
+    margin-left: 3em;
+    margin-top: 1.5em;
     text-align: right;
 }
 
 
 
 .footer-divides {
-    margin-left: 10em;
+    margin-left: 7em;
     margin-top: 2em;
     color: white;
 }
@@ -150,6 +154,40 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     justify-items: left;
+}
+
+
+  figcaption {
+      display: block;
+  }
+
+.help{
+    font-size: 12pt;
+    color: white;
+    margin-left: 2.5em;
+    margin-top: 3em;
+}
+
+.pak {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30pt;
+    color: #f2f2f2;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    margin: 0.50rem;
+    margin-bottom: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto;
+	max-width: 66rem;
 }
 
 }

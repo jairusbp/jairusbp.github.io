@@ -36,7 +36,8 @@ section img {
 figcaption {
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
-    margin: 0.5rem;
+    margin-right: 10pt;
+    display: none;
 }
 
 footer {
@@ -52,7 +53,7 @@ footer p {
 
 .pak {
     font-family: 'Great Vibes', cursive;
-    font-size: 30pt;
+    font-size: 20pt;
     color: #f2f2f2;
     margin-bottom: 0;
     margin-top: 2px;
@@ -61,8 +62,9 @@ footer p {
 .help{
     font-size: 12pt;
     color: white;
-    margin-left: 2.5em;
+    margin-left: 0;;
     margin-top: 3em;
+    margin-right: 0;
 }
 
 footer div a {
@@ -100,36 +102,19 @@ footer div a {
 .responsive li { display: block; }
 
 
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-
-aside {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        }
 
 div#map {
     width:350px;
     height:150px;
     margin-bottom: 1em;
     margin-left: 0;
+    margin-right: 0;
+    position: relative;
     }
 
 
 .ogden-image {
-    width: auto; height: auto; margin: .5rem;
+    width: auto; height: auto; margin: 0;
     }
     
 
@@ -139,3 +124,19 @@ div#map {
     font-size: 30pt;
     margin-bottom: 1px;
 }
+
+figure {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto;
+	max-width: 50rem;
+}
+
