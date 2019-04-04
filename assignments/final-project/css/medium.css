@@ -1,9 +1,76 @@
 @media only screen and (min-width: 45em) {
 
+    /* Wife and Groom Photo, Tag Line, Reserve button    */
 
+    button {
+        font-size: 13pt;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 1em;
+        }
 
+    .main-heading {
+        text-align: left;
+        font-size: 20pt;
+        margin-left: 0.5em;
+            }
 
+    .main-text {
+        text-align: left;
+        margin-right: 6em;
+        font-size: 12pt;
+        margin-left: 1em;
+            }
 
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 
+    .oden-info {
+        font-family: 'Roboto', sans-serif;
+        font-size: 11pt;
+        margin-left: 2em;
+        margin-top: 1em;
+        text-align: right;
+    }
+
+    /* ---- end ----*/
+
+/* Featurette and Ogden Temple Image */
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .norm {box-shadow: 0 0 20px #333;
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .ogden-image {
+        width: auto; height: auto; margin: .5rem;
+    }
+
+    figcaption {
+        font-family: 'Roboto', sans-serif;
+        font-size: 10pt;
+        margin-right: 10pt;
+        margin-left: 10pt;
+        margin-bottom: 5pt;
+    }
+    
+/*---- end ---- */
+
+.footer-divides {
+    margin-left: 10em;
+    margin-top: 2.5em;
+    color: white;
+}
 
 }

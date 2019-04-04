@@ -28,21 +28,132 @@ nav {
     font-size: 12pt;
 }
 
-section img {
-    box-shadow: 0 0 20px #777;
+/* Wife and Groom Photo, Tag Line, Reserve button    */
+button {
+    font-size: 13pt;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 8.5em;
+    margin-bottom: 15px;
+    }
+
+.main-heading {
+    font-family: 'Alegreya', serif;
+    font-size: 25pt;
+     margin-bottom: 1px;
+    margin-left: 0;
+    text-align: center;
+        }
     
+.main-text {
+    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-top: 1px;
+    text-align: center;
+        }
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: #f2f2f2;
+                }
+/* ---- end ----*/
+
+/* Featurette and Ogden Temple Image */
+
+.temple-heading {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.main-ogden {
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    font-size: 15pt;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 1px;
+    margin-bottom: 0.5em;
+}
+
+.oden-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+    margin-right: 1.5em;
+    text-align: left;
+}
+
+.ogden-image {
+    width: auto; height: auto; margin: .5rem;
+}
+
+aside {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.norm {box-shadow: 0 0 20px #333;
+    display: absolute;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 figcaption {
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
-    margin-right: 10pt;
-    display: none;
+    margin: 10pt;
+    margin-bottom: 10px;
 }
+
+
+/*------ end -----*/
+
+/* footer */
+.pak {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25pt;
+    color: #f2f2f2;
+    margin-bottom: 0;
+}
+
+.footer-divides {
+    margin-left: 2.5em;
+    margin-top: 2.5em;
+    color: white;
+}
+
+.tae {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9pt;
+    text-align: center;
+}
+/*---end ---*/
+
+section img {
+    box-shadow: 0 0 20px #777;
+    
+}
+
 
 footer {
     background-color: #333;
     box-shadow: 0 0 30px #777;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
 }
 
 footer p {
@@ -50,14 +161,6 @@ footer p {
     margin-top: 6px;
 }
 
-
-.pak {
-    font-family: 'Great Vibes', cursive;
-    font-size: 20pt;
-    color: #f2f2f2;
-    margin-bottom: 0;
-    margin-top: 2px;
-}
 
 .help{
     font-size: 12pt;
@@ -113,18 +216,6 @@ div#map {
     }
 
 
-.ogden-image {
-    width: auto; height: auto; margin: 0;
-    }
-    
-
-
-.main-heading {
-    font-family: 'Alegreya', serif;
-    font-size: 30pt;
-    margin-bottom: 1px;
-}
-
 figure {
     display: block;
     margin-top: 1em;
@@ -133,10 +224,10 @@ figure {
     margin-right: 10px;
   }
 
-.container {
+  .container {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem auto;
-	max-width: 50rem;
+	max-width: 66rem;
 }
 
