@@ -1,0 +1,136 @@
+header {
+	margin: 10px auto;
+	background-color: #f2f2f2;
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30pt;
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+nav {
+    font-family: 'Alegreya', serif;
+    font-size: 12pt;
+}
+
+section img {
+    box-shadow: 0 0 20px #777;
+    
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    margin: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    box-shadow: 0 0 30px #777;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 6px;
+}
+
+
+.pak {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30pt;
+    color: #f2f2f2;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.help{
+    font-size: 12pt;
+    color: white;
+    margin-left: 2.5em;
+    margin-top: 3em;
+}
+
+footer div a {
+    color: gray;
+}
+
+.navigation { 
+    list-style: none;
+    text-align: center; 
+    padding-left: 0;
+}
+
+.navigation li:first-child { 
+    display: block;
+}
+
+.navigation li { 
+    display: block;
+}
+
+.navigation a {	
+    display: block;	
+    color: #fff; padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;}
+
+.navigation a:hover {	
+    color: #000; 
+    background-color: #fff; 
+    font-weight: 700;	}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li { display: block; }
+
+
+.ogden-image {
+    width: auto; height: auto; margin: 0.5rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        }
+
+div#map {
+    width:350px;
+    height:150px;
+    margin-bottom: 1em;
+    margin-left: 0;
+    }
+
+.norm {box-shadow: 0 0 20px #333;
+    padding: 0;
+}
+

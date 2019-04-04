@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Home | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--insert google font links, css and js links here later-->
+    </head>
+
+    <body>
+        <header>
+            <!--insert img tag for logo here-->
+            <h1>Temple Inn & Suites</h1>
+            <h3>Eternity starts here!</h3>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Temples</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        
+        <main>
+            <section>
+                <picture>
+                    <source srcset="images/main-medium.jpg" media="(min-width: 500px) and (max-width:799px)">
+                    <source srcset="images/main.jpg" media="(min-width: 800px)">
+                    <img id="akona" src="images/main-small.jpg" alt="Bride and Groom">
+                </picture>
+                
+                <div>
+                    <p class="main-heading">We got you covered on your special day.<p>
+                    <p class="main-text"> Focus on the eternal. Let us deal with accomodations, clothing and other services.</p>
+                    <button type="button">Reserve a Hotel</button>
+                </div>
+            </section>
+
+            <p class="temple-heading">Featurette: Ogden Utah Temple</p>
+            <p class="main-ogden">Every week, we at <b><i>Temple Inn & Suites</i></b>, features one of the temples of The Church of Jesus Christ of Latter-day Saints to help you make your choice.</p>
+            <br>
+            <aside>
+                    <div class="oden-info">
+                        <p>The <i><b>Ogden Utah Temple</b></i> was the second built along the Wasatch Front. It was the first temple dedicated in the state of Utah; the four previous temples were dedicated in the Utah Territory more than 78 years earlier. The Ogden Utah Temple was the first temple built with six ordinance rooms, allowing sessions to begin every 20 minutes.  (Only three other temples have six ordinance rooms: the Provo Utah Temple, the Jordan River Utah Temple and the Washington D.C. Temple. The original design for the Ogden Utah Temple included a gold-leafed statue of the angel Moroni atop a gold-colored spire. The statue was eventually eliminated from the design, though one was added over 30 years after its dedication. </p>
+                        <p>The Ogden Utah Temple is a sister building to the Provo Utah Temple. Ground was broken for the Ogden Utah Temple on the 96th birthday of President David O. McKay. He passed away just four months later. The temple was subsequently dedicated on the second anniversary of his passing.</p>
+                        <a href="https://www.mormonnewsroom.org/ldsnewsroom/eng/news-releases-stories/facts-about-the-ogden-utah-temple"> Continue Reading at MormonNewsroom.Org</a>
+                    </div>
+                    <figure class="norm">
+                            <picture>
+                                    <source  srcset="images/ogden-temple-large.jpg" media="(min-width: 500px) and (max-width:799px)">
+                                    <source  srcset="images/ogden-temple.jpg" media="(min-width: 800px)">
+                                    <img class="ogden-image" src="images/ogden-temple-small.jpg" alt="Ogden Utah Temple">
+                            </picture>
+                        <figcaption>The Ogden Utah Temple was the first temple built with six ordinance rooms, allowing sessions to begin every 20 minutes. </figcaption>
+                    </figure>
+                    
+            </aside>
+            <br>
+            <br>
+
+            <footer>
+                <div class="footer-divides">
+                    <p class="pak">Temple Inn & Suites</p>
+
+                    
+                    <p><b>Address: </b>Tower 1, Suite 3, 234 Washington Avenue, Bethesda, MD 20899<br>
+                    <b>Email: </b>info@innandsuites.com<br>
+                    <b>Phone: </b>+1-541-754-3010</li></p>
+                    
+
+                    <div>
+                        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                        <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+                    </div>
+
+                </div>
+
+                <article>
+                    <p class="help"><i> Do you need help finding us? This map can help.</i></p>
+                    <div id="map"></div>
+                </article>
+
+            </footer>
+            
+        </main>
+            <script src="js/map.js"></script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+</script>
+    </body>
+
+        
+</html>
