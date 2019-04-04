@@ -100,10 +100,6 @@ footer div a {
 .responsive li { display: block; }
 
 
-.ogden-image {
-    width: auto; height: auto; margin: 0.5rem;
-}
-
 section {
     display: grid;
     grid-template-columns: 1fr;
@@ -114,6 +110,7 @@ aside {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    justify-items: center;
     }
 
     footer {
@@ -132,9 +129,13 @@ div#map {
 
 
 .ogden-image {
-     width: auto; height: auto; margin: 0;
+    width: auto; height: auto; margin: .5rem;
     }
+    
 
-figcaption {
-    display: none;
+
+.main-heading {
+    font-family: 'Alegreya', serif;
+    font-size: 30pt;
+    margin-bottom: 1px;
 }
