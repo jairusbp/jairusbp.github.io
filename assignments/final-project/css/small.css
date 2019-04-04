@@ -130,6 +130,11 @@ div#map {
     margin-left: 0;
     }
 
-.norm {box-shadow: 0 0 20px #333;
-    padding: 0;
+
+.ogden-image {
+     width: auto; height: auto; margin: 0;
     }
+
+figcaption {
+    display: none;
+}
