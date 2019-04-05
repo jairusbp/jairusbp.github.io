@@ -44,17 +44,17 @@ li a:hover {
     }
     
 .navigation li:first-child { display: none;	}
-.navigation li { display: flex; margin-right: 1rem;}	
-.navigation li a { color:white;}
-    
-.navigation {
+.navigation li { display: flex; margin-right: 1rem; margin-left: 1rem;}	
+.navigation { 
     list-style-type: none;
     margin: 0;
-    padding-right: 15%;
-    padding-left: 30%;
+    padding-right: 25%;
+    padding-left: 25%;
     overflow: hidden;
     background-color: #333;
-    }
+    flex-direction: row;
+}
+    
 
 
 
