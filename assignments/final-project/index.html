@@ -22,8 +22,8 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Temples</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
                     <li><a href="#">Reservation</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact Us</a></li>
@@ -37,7 +37,7 @@
                 <picture>
                     <source srcset="images/main-medium.jpg" media="(min-width: 500px) and (max-width:799px)">
                     <source srcset="images/main.jpg" media="(min-width: 800px)">
-                    <img id="akona" src="images/main-small.jpg" alt="Bride and Groom">
+                    <img src="images/main-small.jpg" alt="Bride and Groom">
                 </picture>
                 
                 <div>
@@ -101,6 +101,50 @@
             <script src="js/map.js"></script>
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+</script>
+
+<script>
+    var article=document.querySelector('article');
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+        var townPage = request.response;
+        showTowns(townPage);
+    }
+
+    function showTowns(jsonObj) {
+        var idaho = jsonObj['towns'];
+        
+        for (var i = 4; i < idaho.length; i++) {
+            if (i === 5) {
+            break;
+            }
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myList = document.createElement('ul');
+
+        myH2.textContent = idaho[i].name;
+        myPara1.textContent = 'List of Official Events in Preston, Idaho:';
+
+        var specialEvents = idaho[i].events;
+        for (var j = 0; j < specialEvents.length; j++) {
+        var listItem = document.createElement('li');
+        listItem.textContent = specialEvents[j];
+        myList.appendChild(listItem);
+    }
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myList);
+
+        article.appendChild(myArticle);
+}
+        
+        }
 </script>
     </body>
 

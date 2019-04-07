@@ -45,7 +45,7 @@ button {
     margin-left: 0;
     text-align: center;
         }
-    
+
 .main-text {
     font-size: 12pt;
     font-family: 'Roboto', sans-serif;
@@ -235,3 +235,29 @@ figure {
 	max-width: 66rem;
 }
 
+/*** temple page ***/
+
+
+.main-heading-temple {
+    font-family: 'Alegreya', serif;
+    font-size: 25pt;
+    margin-bottom: 1px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1em;
+        }
+
+.main-text-temple {
+    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-top: 1em;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+
+.akona {
+    padding-top: 0.5em;
+    padding-left: 0;
+}

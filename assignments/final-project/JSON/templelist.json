@@ -1,0 +1,136 @@
+{
+  "temples" : [
+    {
+      "name": "Ogden Utah Temple",
+      "address": "350 22nd St., Ogden UT 84401-1487, United States",
+      "phone": "(1) 801-621-6880",
+      "email" : "ogdentemple@lds.org",
+      "services" : [
+        "Clothing rental available",
+        "Cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "history" : [
+        "Announced: 24 August 1967",
+        "Groundbreaking: 8 September 1969",
+        "Dedicated: 18 January 1972",
+        "Rededicated: 21 September 2014"
+      ],
+      "endownment" : [
+        "7:00 PM - Walk-ins Only",
+        "7:05 PM - Walk-ins and Appointments - Spanish",
+        "7:30 PM - Walk-ins Only",
+        "8:00 PM - Walk-ins Only"
+      ],
+      "closure" : [
+        "Saturday, 6 April 2019",
+        "Saturday, 18 May 2019",
+        "Thursday, 4 July 2019",
+        "Wednesday, 24 July 2019",
+        "Monday, 9 September 2019 - Monday, 23 September 2019",
+        "Saturday, 5 October 2019",
+        "Thursday, 31 October 2019 (Limited Hours)",
+        "Wednesday, 27 November 2019 (Limited Hours)",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019"
+      ]
+    },
+    {
+      "name" : "Seoul Korea Temple",
+      "address" : "Sinchon-ro 7 GIL 21, Seodaemun-gu, Seoul 03783, South Korea",
+      "phone" : "(82) 2-334-9100",
+      "email" : "seoultemplelds.org",
+      "services" : [
+        "Clothing rental available",
+        "No cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+      ],
+      "history" : [
+        "Announced: 1 April 1981",
+        "Groundbreaking: 9 May 1983",
+        "Dedicated: 14 December 1985"
+      ],
+      "endownment" : [
+        "6:00 AM - Walk-ins and Appointments - Korean",
+        "8:00 AM - Walk-ins and Appointments - Korean",
+        "10:00 AM - Walk-ins and Appointments - Korean",
+        "1:30 PM - Walk-ins and Appointments - Korean"
+      ],
+      "closure" : [
+        "Monday, 8 April 2019 - Monday, 22 April 2019",
+        "Thursday, 12 September 2019 - Friday, 13 September 2019",
+        "Monday, 7 October 2019 - Monday, 21 October 2019",
+        "Wednesday, 25 December 2019"
+      ]
+    },
+      {
+        "name" : "San Diego California Temple",
+        "address" : "7474 Charmant Dr., San Diego CA 92122-5000, United States",
+        "phone" : "(1) 858-622-0991",
+        "email" : "sandiegotemple@lds.org",
+        "services" : [
+          "Clothing rental available",
+          "Cafeteria available",
+          "No patron housing available",
+          "Distribution center nearby"
+        ],
+        "history" : [
+          "Announced: 7 April 1984",
+          "Groundbreaking: 27 February 1988",
+          "27 February 1988: 25 April 1993"
+        ],
+        "endownment" : [
+          "5:30 AM - Walk-ins Only",
+          "8:00 AM - Walk-ins and Appointments",
+          "9:00 AM - Walk-ins and Appointments",
+          "9:30 AM - Walk-ins and Appointments"
+        ],
+        "closure" : [
+          "Saturday, 6 April 2019",
+          "Thursday, 4 July 2019",
+          "Monday, 30 September 2019 - Monday, 11 November 2019",
+          "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+          "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+          "Tuesday, 31 December 2019"
+        ]
+      },
+      {
+        "name" : "Concepción Chile Temple",
+        "address" : "1525 Pedro de Valdivia, Concepción, Bio-Bio, Chile",
+        "phone" : "(56) 41-3834700",
+        "email" : "concepciontemple@lds.org",
+        "services" : [
+          "No clothing rental available",
+          "No cafeteria available",
+          "Patron housing available",
+          "No distribution center nearby",
+        ],
+        "history" : [
+          "Announced: 3 October 2009",
+          "Groundbreaking: 17 October 2015",
+          "Dedicated: 28 October 2018"
+        ],
+        "endownment" : [
+          "9:00 AM - Walk-ins and Appointments",
+          "1:00 AM - Walk-ins and Appointments",
+          "12:00 PM - Walk-ins and Appointments",
+          "4:00 PM - Walk-ins and Appointments"
+        ],
+        "closure" : [
+          "Saturday, 6 April 2019",
+          "Wednesday, 1 May 2019",
+          "Monday, 6 May 2019 - Monday, 20 May 2019",
+          "Tuesday, 21 May 2019",
+          "Wednesday, 18 September 2019 - Thursday, 19 September 2019",
+          "Saturday, 5 October 2019",
+          "Monday, 18 November 2019 - Monday, 2 December 2019",
+          "Tuesday, 24 December 2019",
+          "Wednesday, 25 December 2019",
+          "Tuesday, 31 December 2019"
+        ]
+      }
+  ]
+}

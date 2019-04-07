@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temples | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--insert google font links, css and js links here later-->
+    </head>
+
+    <body>
+        <header>
+            <!--insert img tag for logo here-->
+            <h1>Temple Inn & Suites</h1>
+            <h3>Eternity starts here!</h3>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        
+        <main class="container">
+            <section>
+                <div>
+                    <p class="main-heading-temple">Find a Temple. We're just nearby if you need us. </p>
+                    <p class="main-text-temple"><b>Temple Inn & Suites</b>, in partnership with The Church of Jesus Christ of Latter-day Saints, has several facilities close to temples accross the globe.</p>
+                </div>
+
+                <picture class="akona">
+                        <source srcset="images/main-temple-page-medium.jpg" media="(min-width: 500px) and (max-width:799px)">
+                        <source srcset="images/main-temple-page.jpg" media="(min-width: 800px)">
+                        <img src="images/main-temple-page-small.jpg" alt="Youth and Temple">
+                    </picture>
+            </section>
+
+            <article>
+                <div>
+                    <!--insert img here-->
+                    <span></span>
+                    <div>
+                        <!--insert current weather API here-->
+                    </div>
+                </div>
+            </article>
+
+        
+                <footer>
+                        <div class="footer-divides">
+                            <p class="pak">Temple Inn & Suites</p>
+        
+                            
+                            <p><b>Address: </b>Tower 1, Suite 3, 234 Washington Avenue, Bethesda, MD 20899<br>
+                            <b>Email: </b>info@innandsuites.com<br>
+                            <b>Phone: </b>+1-541-754-3010</li></p>
+                            
+        
+                            <div>
+                                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                                <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+                            </div>
+        
+                        </div>
+        
+                        <article>
+                            <p class="help"><i> Do you need help finding us? This map can help.</i></p>
+                            <div id="map"></div>
+                        </article>
+                        
+                    </footer>
+                    <div class="tae"><p>&copy;2019 Temple Inn & Suites &#124; Brigham Young University-Idaho &#124; <a href="attribution.html">Attributions</a> &#124; Jairus B. Purisima</p></div>
+                
+                    
+                </main>
+                    <script src="js/hamburger.js"></script>
+                    <script src="js/map.js"></script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+        </script>
+            </body>
+        
+                
+        </html>

@@ -198,4 +198,25 @@ footer {
 	max-width: 66rem;
 }
 
+/*** temple page ***/
+.main-heading-temple {
+    text-align: left;
+    font-size: 30pt;
+    margin-left: 0;
+    margin-top: 0;
+        }
+.main-text-temple {
+    text-align: left;
+    margin-right: 20px;
+    font-size: 13pt;
+    margin-left: 0;
+    margin-top: 10pt;
+                
+}
+
+.akona {
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
 }
