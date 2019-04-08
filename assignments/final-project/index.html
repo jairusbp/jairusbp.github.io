@@ -103,50 +103,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
 </script>
 
-<script>
-    var article=document.querySelector('article');
-    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-    var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function() {
-        var townPage = request.response;
-        showTowns(townPage);
-    }
 
-    function showTowns(jsonObj) {
-        var idaho = jsonObj['towns'];
-        
-        for (var i = 4; i < idaho.length; i++) {
-            if (i === 5) {
-            break;
-            }
-        var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myList = document.createElement('ul');
-
-        myH2.textContent = idaho[i].name;
-        myPara1.textContent = 'List of Official Events in Preston, Idaho:';
-
-        var specialEvents = idaho[i].events;
-        for (var j = 0; j < specialEvents.length; j++) {
-        var listItem = document.createElement('li');
-        listItem.textContent = specialEvents[j];
-        myList.appendChild(listItem);
-    }
-
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myList);
-
-        article.appendChild(myArticle);
-}
-        
-        }
-</script>
-    </body>
-
+</body>
         
 </html>
