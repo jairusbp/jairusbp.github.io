@@ -33,7 +33,7 @@
         <br>
         
         <main class="container">
-            <article>
+            <section>
                 <div>
                     <p class="main-heading-temple">Find a Temple. We're just nearby if you need us. </p>
                     <p class="main-text-temple"><b>Temple Inn & Suites</b>, in partnership with The Church of Jesus Christ of Latter-day Saints, has several facilities close to temples accross the globe.</p>
@@ -44,11 +44,40 @@
                         <source srcset="images/main-temple-page.jpg" media="(min-width: 800px)">
                         <img src="images/main-temple-page-small.jpg" alt="Youth and Temple">
                     </picture>
-            </article>
+                </section>
+                <br>
 
-            <section>
-            </section>
+                <article>
+                    <div class="choices">
 
+                        <a href="#">
+                        <figure class="ewan">
+                            <img class="effect" src="images/utah_icon.jpg" alt="Ogden Utah Temple">
+                            <figcaption>Ogden Utah Temple</figcaption>
+                        </figure></a>  
+                        
+                        <a href="koreatemple.html">
+                        <figure class="ewan">
+                            <img class="effect" src="images/korea_icon.jpg" alt="Seoul Korea Temple">
+                            <figcaption>Seoul Korea Temple</figcaption>
+                        </figure></a>
+
+                        <a href="#">
+                        <figure class="ewan">
+                            <img class="effect" src="images/california_icon.jpg" alt="San Diego California Temple">
+                            <figcaption>San Diego California Temple</figcaption>
+                        </figure></a>
+
+                        <a href="#">
+                        <figure class="ewan">
+                            <img class="effect" src="images/chile_icon.jpg" alt="Concepción Chile Temple">
+                            <figcaption>Concepción Chile Temple</figcaption>
+                        </figure></a>
+                    </div>
+
+                    <a href="https://www.lds.org/temples/list?lang=eng"><p>View complete Temple list<p></a>
+                </article>
+                <br>
         
                 <footer>
                         <div class="footer-divides">
@@ -83,61 +112,5 @@
                     <script async defer
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
         </script>
-                <script>
-                
-                    var section = document.querySelector('section');
-                    var requestURL = 'https://jairusbp.github.io/assignments/final-project/JSON/templelist.json';
-                    var request = new XMLHttpRequest();
-                    request.open('GET', requestURL);
-                    request.responseType = 'json';
-                    request.send();
-                    request.onload = function() {
-                        var townPage = request.response;
-                        showTowns(townPage);
-                }
-    
-                    function showTowns(jsonObj) {
-                    var idaho = jsonObj['temples'];
-                    
-                    for (var i = 1; i < idaho.length; i++) {
-                        if (i == 1  ) {
-                        continue;
-                       }
-                       if (i == 2) {
-                        continue;
-                       }
-                       if (i == 3) {
-                        continue;
-                       }
-                    var myArticle = document.createElement('article');
-                    var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
-                    var myPara2 = document.createElement('p');
-                    var myPara3 = document.createElement('p');
-                    var myPara4 = document.createElement('p');
-                    var myPara5 = document.createElement('p');
-    
-                    myH2.textContent = idaho[i].name;
-                    myPara1.textContent = 'Motto: ' + idaho[i].address;
-                    myPara2.textContent = 'Year Founded: ' + idaho[i].phone;
-                    myPara3.textContent = 'Current Population: ' + idaho[i].email;
-                    
-                    
-                    myArticle.appendChild(myH2);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
-                    myArticle.appendChild(myPara4);
-                    myArticle.appendChild(myPara5);
-                    
-    
-                    section.appendChild(myArticle);
-                    }
-                    }
-                    </script>
-                
-
-            </body>
-        
-                
-        </html>
+            </body>  
+</html>

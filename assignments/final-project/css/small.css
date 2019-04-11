@@ -6,6 +6,11 @@ header {
     
 }
 
+a {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: center;
+}
 h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 35pt;
@@ -219,15 +224,6 @@ div#map {
     position: relative;
     }
 
-
-figure {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   .container {
 	display: flex;
 	flex-direction: column;
@@ -261,3 +257,33 @@ figure {
     padding-top: 0.5em;
     padding-left: 0;
 }
+
+/* Temple Page */
+
+figure {
+    padding-bottom: 10px;
+    width: 316px;
+  }
+
+.effect { width: 300px; height: auto; margin: .5rem;}
+
+.ewan:hover {box-shadow: 0 0 10px #333;}
+/* rounded corners - boxmodel */
+
+.choices {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 5px;
+    justify-items: center;
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    margin: 0.50rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+

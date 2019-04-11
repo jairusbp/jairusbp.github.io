@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temples | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--insert google font links, css and js links here later-->
+    </head>
+
+    <body>
+        <header>
+            <!--insert img tag for logo here-->
+            <h1>Temple Inn & Suites</h1>
+            <h3>Eternity starts here!</h3>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        
+        <main class="container">
+
+        <a href="temples.html">Go back to main temple page</a>
+
+
+        <section>
+        </section>
+
+
+
+                <footer>
+                        <div class="footer-divides">
+                            <p class="pak">Temple Inn & Suites</p>
+        
+                            
+                            <p><b>Address: </b>Tower 1, Suite 3, 234 Washington Avenue, Bethesda, MD 20899<br>
+                            <b>Email: </b>info@innandsuites.com<br>
+                            <b>Phone: </b>+1-541-754-3010</li></p>
+                            
+        
+                            <div>
+                                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                                <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+                            </div>
+        
+                        </div>
+        
+                        <div>
+                            <p class="help"><i> Do you need help finding us? This map can help.</i></p>
+                            <div id="map"></div>
+                        </div>
+                        
+                    </footer>
+                    <div class="tae"><p>&copy;2019 Temple Inn & Suites &#124; Brigham Young University-Idaho &#124; <a href="attribution.html">Attributions</a> &#124; Jairus B. Purisima</p></div>
+                
+                    
+                </main>
+                    <script src="js/hamburger.js"></script>
+                    <script src="js/map.js"></script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+        </script>
+                <script>
+                    var section = document.querySelector('section');
+                    var requestURL = 'https://jairusbp.github.io/assignments/final-project/JSON/templelist.json';
+                    var request = new XMLHttpRequest();
+                    request.open('GET', requestURL);
+                    request.responseType = 'json';
+                    request.send();
+                    request.onload = function() {
+                    var lordsHouse = request.response;
+                    showTemples(lordsHouse);
+                    }
+
+                    function showTemples(jsonObj) {
+                    var tahanan = jsonObj['temples'];
+      
+                    for (var i = 0; i < tahanan.length; i++) {
+                    var myArticle = document.createElement('article');
+                    var myH2 = document.createElement('h2');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myPara4 = document.createElement('p');
+                    var myList1 = document.createElement('ul');
+                    var myPara5 = document.createElement('p');
+                    var myList2 = document.createElement('ul');
+                    var myPara6 = document.createElement('p');
+                    var myList3 = document.createElement('ul');
+                    var myPara7 = document.createElement('p');
+                    var myList4 = document.createElement('ul');
+
+                    myH2.textContent = tahanan[i].name;
+                    myPara1.textContent = 'Address: ' + tahanan[i].address;
+                    myPara2.textContent = 'Telephone: ' + tahanan[i].phone;
+                    myPara3.textContent = 'Email: ' + tahanan[i].email;
+                    myPara4.textContent = 'Services:';
+                        
+                    var lingkod = tahanan[i].services;
+                    for (var j = 0; j < lingkod.length; j++) {
+                    var listLingkod = document.createElement('li');
+                    listLingkod.textContent = lingkod[j];
+                    myList1.appendChild(listLingkod);
+                    }
+
+                    myPara5.textContent = 'History:';
+
+                    var kasaysayan = tahanan[i].history;
+                    for (var j = 0; j < kasaysayan.length; j++) {
+                    var listAP = document.createElement('li');
+                    listAP.textContent = kasaysayan[j];
+                    myList2.appendChild(listAP);
+                    }
+
+                    myPara6.textContent = 'Endownment Sessions:';
+
+                    var grace = tahanan[i].endownment;
+                    for (var j = 0; j < grace.length; j++) {
+                    var listGrace = document.createElement('li');
+                    listGrace.textContent = grace[j];
+                    myList3.appendChild(listGrace);
+                    }
+
+                    myPara7.textContent = 'Temple Closure:';
+
+                    var sarado = tahanan[i].closure;
+                    for (var j = 0; j < sarado.length; j++) {
+                    var listSarado = document.createElement('li');
+                    listSarado.textContent = sarado[j];
+                    myList4.appendChild(listSarado);
+                    }
+
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myPara4);
+                    myArticle.appendChild(myList1);
+                    myArticle.appendChild(myPara5);
+                    myArticle.appendChild(myList2);
+                    myArticle.appendChild(myPara6);
+                    myArticle.appendChild(myList3);
+                    myArticle.appendChild(myPara7);
+                    myArticle.appendChild(myList4);
+
+                    section.appendChild(myArticle);
+                }
+                }
+                </script>
+            </body>
+        
+                
+</html>

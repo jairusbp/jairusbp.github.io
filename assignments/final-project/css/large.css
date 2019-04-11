@@ -124,6 +124,7 @@ figcaption {
     font-size: 10pt;
     margin: 0.50rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* ---- end ---- */
@@ -217,6 +218,27 @@ footer {
 .akona {
     padding-top: 0.5em;
     padding-left: 1em;
+}
+
+
+/* Temple Page */
+
+figure {
+    padding-bottom: 10px;
+    width: 367px;
+  }
+
+.effect { width: 350px; height: auto; margin: .5rem;}
+
+.ewan:hover {box-shadow: 0 0 10px #333;}
+/* rounded corners - boxmodel */
+
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    padding: 5px;
+    justify-items: center;
 }
 
 }
