@@ -286,4 +286,32 @@ figcaption {
     text-align: center;
 }
 
+/** Seoul Korea Temple page */
 
+p   {
+    font-family: 'Roboto', sans-serif; 
+}
+
+ul {
+    font-family: 'Roboto', sans-serif; 
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20pt;
+}
+
+.persona2 {
+    padding-right: 2em;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color: blanchedalmond;
+    border-bottom: 20em;
+}
+
+.persona {
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Seoul Korea Temple | Temples | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
+        <title>Ogden Utah Temple | Temples | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
@@ -37,14 +37,14 @@
                 <br>
                 <section>
                         <div>
-                            <p class="main-heading-temple">Seoul Korea Temple </p>
+                            <p class="main-heading-temple">Ogden Utah Temple  </p>
                             <p class="main-text-temple"><b>Temple Inn & Suites</b> is nearby. Let us know if you need help today.</p>
                         </div>
         
                         <picture class="akona">
-                                <source srcset="images/koreatemple_medium.jpg" media="(min-width: 500px) and (max-width:799px)">
-                                <source srcset="images/koreatemple_large.jpg" media="(min-width: 800px)">
-                                <img src="images/koreatemple_small.jpg" alt="Seoul Korea Temple">
+                                <source srcset="images/utahtemple_medium.jpg" media="(min-width: 500px) and (max-width:799px)">
+                                <source srcset="images/utahtemple_large.jpg" media="(min-width: 800px)">
+                                <img src="images/utahtemple_small.jpg" alt="Ogden Utah Temple ">
                             </picture>
                         </section>
                         <br>
@@ -53,13 +53,13 @@
                             <article class="persona">
                             </article>
                             <span class="persona2">
-                                    <h3>How is the weather in Seoul, South Korea today?</h3>
-                                    <p>Current: <span id="current-weatherSS"></span></p>
-                                    <p>Temperature: <span id="high-tempSS"></span>&deg;F</p>
-                                    <p>Humidity: <span id="current-humiditySS"></span>&#37;</p>
-                                    <p> Wind Speed: <span id="current-windSpeedSS"></span> mph</p>
-                                    <p> Wind Direction: <span id="wind-directionSS"></span>&deg;</p>
-                                    <p>Wind Chill: <span id="windChillSS"></span> &deg;F</p>
+                                    <h3>How is the weather in Ogden, Utah today?</h3>
+                                    <p>Current: <span id="current-weatherFH"></span></p>
+                                    <p>Temperature: <span id="high-tempFH"></span>&deg;F</p>
+                                    <p>Humidity: <span id="current-humidityFH"></span>&#37;</p>
+                                    <p> Wind Speed: <span id="current-windSpeedFH"></span> mph</p>
+                                    <p> Wind Direction: <span id="wind-directionFH"></span>&deg;</p>
+                                    <p>Wind Chill: <span id="windChillFH"></span> &deg;F</p>
                             </span>
                         </div>
                         <br>
@@ -121,8 +121,8 @@
                     function showTemples(jsonObj) {
                     var tahanan = jsonObj['temples'];
       
-                    for (var i = 1; i < tahanan.length; i++) {
-                        if (i === 2) {
+                    for (var i = 0; i < tahanan.length; i++) {
+                        if (i === 1) {
                         break;
                         }
                     var myArticle = document.createElement('article');

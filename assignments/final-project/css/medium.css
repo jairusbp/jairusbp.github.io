@@ -111,4 +111,13 @@ figure {
     justify-items: center;
 }
 
+.persona2 {
+    padding-right: 2em;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color: blanchedalmond;
+    margin-bottom: 35em;
+}
+
 }
