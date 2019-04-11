@@ -80,7 +80,7 @@ weatherRequestCA.onload =  function () {
     document.getElementById('current-windSpeedCA').innerHTML=weatherDataCA.wind.speed;
     document.getElementById('current-weatherCA').innerHTML=weatherDataCA.weather[0].main;
 
-    var wChillSS = Math.round((0.0817*(3.71*(Math.pow(weatherDataCA.wind.speed, 0.5))+5.81-0.25*weatherDataCA.wind.speed)*(weatherDataCA.main.temp_max-91.4)+91.4));
+    var wChillCA = Math.round((0.0817*(3.71*(Math.pow(weatherDataCA.wind.speed, 0.5))+5.81-0.25*weatherDataCA.wind.speed)*(weatherDataCA.main.temp_max-91.4)+91.4));
     
     document.getElementById('windChillCA').innerHTML=wChillCA;
     document.getElementById('wind-directionCA').innerHTML=weatherDataCA.wind.deg;
