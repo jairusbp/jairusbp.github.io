@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Full-Time Temple Missionaries | Services | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--insert google font links, css and js links here later-->
+    </head>
+
+    <body>
+        <header>
+            <!--insert img tag for logo here-->
+            <h1>Temple Inn & Suites</h1>
+            <h3>Eternity starts here!</h3>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        
+        <main class="container">
+                <a href="services.html">Go back to main "services" page</a>
+                <br>
+                <section>
+                        <div>
+                            <p class="main-heading-temple">Full-Time Temple Missionaries. </p>
+                            <p class="main-text-temple"><b>Temple Inn & Suites</b> understands how important the work that you do. Let us take care of you.</p>
+                        </div>
+        
+                        <picture class="akona">
+                                <source srcset="images/seniormissionary_medium.jpg" media="(min-width: 500px) and (max-width:799px)">
+                                <source srcset="images/seniormissionary_large.jpg" media="(min-width: 800px)">
+                                <img src="images/seniormissionary_small.jpg" alt="Senior Missionaries">
+                            </picture>
+                        </section>
+                        <br>
+                
+                        <div class="choices">
+                            <article class="persona">
+                                <h2>Choose between the two packages below:</h2>
+                                <br>
+                                <h2>Package 1: Celestial Suite </h2>
+                                <img src="images/celestialsuite.jpg" alt="Celestial Suite" >
+                                <p><b>Price:</b> $3000 per month</p>
+                                <p><b>Inclusions:</b></p>
+                                <ul>
+                                        <li>Two bedrooms with king size beds each</li>
+                                        <li>Toilet and bath in each room</li>
+                                        <li>Fully-furnished living room</li>
+                                        <li>Fully air-conditioned</li>
+                                        <li>Own WiFi connection & NETFLIX account</li>
+                                </ul>
+                                <br>
+                                <h2>Package 2: Paradise Suite </h2>
+                                <img src="images/paradisepackage.jpg" alt="paradise package">
+                                <p><b>Price:</b> $2000 per month</p>
+                                <p><b>Inclusions:</b></p>
+                                <ul>
+                                        <li>One bedroom with king size bed</li>
+                                        <li>Toilet and bath</li>
+                                        <li>Fully-furnished living room</li>
+                                        <li>Fully air-conditioned</li>
+                                        <li>Own WiFi connection & NETFLIX account</li>
+                                </ul>
+                            </article>
+                            <span class="persona2">
+                                    <h3>Need more information? Contact us.</h3>
+                                    <form action="thankyou.html" target="_blank" class="keme">
+                                                Full Name (Required): <input type="text" name="fullname" required>   
+                                                Email Address: <input type="email" name="emailaddress" placeholder="example@domain.com"><br>
+                                                Phone Number (Required): <input type="tel" name="phonenumber" required><br>
+                                                Home State/ Country (Required): <input type="address" name="address" required>
+                                                <br>
+                                                <br>
+                                                Questions or Concerns:<br>
+                                                <textarea name="comments" rows="4" cols="30"></textarea>
+                                                <br>
+                                                <br>
+                                            <input type="submit" value="Submit">
+                                        </form>
+                            </span>
+                        </div>
+                        <br>
+
+        
+
+
+        
+
+
+
+                <footer>
+                        <div class="footer-divides">
+                            <p class="pak">Temple Inn & Suites</p>
+        
+                            
+                            <p><b>Address: </b>4800 Montgomery Ln #300, Bethesda, MD 20814<br>
+                            <b>Email: </b>info@innandsuites.com<br>
+                            <b>Phone: </b>+1-541-754-3010</li></p>
+                            
+        
+                            <div>
+                                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                                <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+                            </div>
+        
+                        </div>
+        
+                        <div>
+                            <p class="help"><i> Do you need help finding us? This map can help.</i></p>
+                            <div id="map"></div>
+                        </div>
+                        
+
+                    </footer>
+                    <div class="tae"><p>&copy;2019 Temple Inn & Suites &#124; Brigham Young University-Idaho &#124; <a href="attribution.html">Attributions</a> &#124; Jairus B. Purisima</p></div>
+                
+                    
+                </main>
+                    <script src="js/hamburger.js"></script>
+                    <script src="js/map.js"></script>
+                    <script src="js/weatherapi.js"></script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+        </script>
+
+</body>
+        
+                
+</html>
