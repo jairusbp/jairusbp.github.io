@@ -126,4 +126,13 @@ fieldset {
     display: inline-block;
     min-width: 42rem;
 }
+
+.extraservice {
+    font-family: 'Alegreya', serif;
+    font-size: 17pt;
+    text-align: center;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
 }

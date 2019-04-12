@@ -267,7 +267,7 @@ figure {
 
 .effect { width: 300px; height: auto; margin: .5rem;}
 
-.ewan:hover {box-shadow: 0 0 10px #333;}
+.ewan:hover {box-shadow: 0 0 10px #333; background-color: white;}
 /* rounded corners - boxmodel */
 
 .choices {
@@ -329,3 +329,14 @@ fieldset {
     min-width: 15rem;
 }
 
+.extraservice {
+    font-family: 'Alegreya', serif;
+    font-size: 17pt;
+    text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.echos {
+    background-color: blanchedalmond;
+}
