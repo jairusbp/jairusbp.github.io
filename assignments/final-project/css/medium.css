@@ -120,4 +120,10 @@ figure {
     margin-bottom: 35em;
 }
 
+fieldset {
+    padding: 15px;
+    line-height: 30px;
+    display: inline-block;
+    min-width: 42rem;
+}
 }

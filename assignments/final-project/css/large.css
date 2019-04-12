@@ -260,4 +260,11 @@ figure {
     background-color: blanchedalmond;
     margin-bottom: 30em;
 }
+
+fieldset {
+    padding: 15px;
+    line-height: 30px;
+    display: inline-block;
+    min-width: 60rem;
+}
 }

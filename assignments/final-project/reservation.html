@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Reservation | CIT 230 Final Project | Jairus B. Purisima | BYU-Idaho</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--insert google font links, css and js links here later-->
+    </head>
+
+    <body>
+        <header>
+            <!--insert img tag for logo here-->
+            <h1>Temple Inn & Suites</h1>
+            <h3>Eternity starts here!</h3>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        
+        <main class="container">
+
+                <section>
+                        <div>
+                            <p class="main-heading-temple">Need a reservation? <br>You're in the right place. </p>
+                            <br>
+                            <p class="main-text-temple">Wherever you are in the world, <b>Temple Inn & Suites</b> is here to take care of you and your family.</p>
+                        </div>
+        
+                        <picture class="akona">
+                                <source srcset="images/reservation_medium.jpg" media="(min-width: 500px) and (max-width:799px)">
+                                <source srcset="images/reservation_large.jpg" media="(min-width: 800px)">
+                                <img src="images/reservation_small.jpg" alt="Reservation">
+                            </picture>
+                        </section>
+                        <br>
+
+                <form action="thankyou.html" target="_blank">
+            
+                    <fieldset>
+                        Full Name (Required): <input type="text" name="fullname" required>   
+                        Email Address: <input type="email" name="emailaddress" placeholder="example@domain.com"><br>
+                        Phone Number (Required): <input type="tel" name="phonenumber" required>
+                        Home State/ Country (Required): <input type="address" name="address" required>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset>
+                        
+                        Location: <input name="stype" list="location">
+                            <datalist id="location">
+                                <option value="Ogden, Utah">
+                                <option value="Seoul, South Korea">
+                                <option value="San Diego, California">
+                                <option value="Concepción, Chile">
+                                <option value="Other">
+                            </datalist> 
+                            <br>
+                        If location is "Other", please enter location name: <input type="address" name="address"><br>
+                        Check-In Date: <input type="date" name="dt">
+                        Check-Out Date: <input type="date" name="dt"><br>
+                        Room Type: 
+                            <select name="region">
+                                <option >--Select Room Type--</option>
+                                <option value="standard">Standard</option>
+                                <option value="deluxe">Deluxe</option>
+                                <option value="studio">Studio</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        Number of Rooms: <input type="text" name="fullname"><br>
+
+
+                        Special Accomodations/ Comments:<br>
+                        <textarea name="comments" rows="4" cols="40"></textarea>
+                    </fieldset>
+                        <br>
+                        <br>
+                    <input type="submit" value="Submit">
+                </form>
+                <br>
+
+                <footer>
+                        <div class="footer-divides">
+                            <p class="pak">Temple Inn & Suites</p>
+        
+                            
+                            <p><b>Address: </b>Tower 1, Suite 3, 234 Washington Avenue, Bethesda, MD 20899<br>
+                            <b>Email: </b>info@innandsuites.com<br>
+                            <b>Phone: </b>+1-541-754-3010</li></p>
+                            
+        
+                            <div>
+                                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                                <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                                <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+                            </div>
+        
+                        </div>
+        
+                        <article>
+                            <p class="help"><i> Do you need help finding us? This map can help.</i></p>
+                            <div id="map"></div>
+                        </article>
+                        
+                    </footer>
+                    <div class="tae"><p>&copy;2019 Temple Inn & Suites &#124; Brigham Young University-Idaho &#124; <a href="attribution.html">Attributions</a> &#124; Jairus B. Purisima</p></div>
+                
+                    
+                </main>
+                    <script src="js/hamburger.js"></script>
+                    <script src="js/map.js"></script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzEZMKr0Wz4t-8I1amOba4wVIfLtmAkng&callback=initMap">
+        </script>
+        
+        
+        </body>
+                
+        </html>

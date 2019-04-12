@@ -315,3 +315,17 @@ h2 {
     margin-left: 2em;
     margin-bottom: 2em;
 }
+
+form {
+    font-family: 'Roboto', sans-serif; 
+    padding: 30px;
+    
+}
+
+fieldset {
+    padding: 15px;
+    line-height: 30px;
+    display: flex;
+    min-width: 15rem;
+}
+
