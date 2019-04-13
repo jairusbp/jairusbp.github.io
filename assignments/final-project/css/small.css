@@ -344,3 +344,12 @@ fieldset {
 .keme {
     line-height: 25px;
 }
+
+.ayokona {
+    text-align: center;
+}
+
+.active {
+    background-color: rgb(45, 109, 182);
+    color: white;
+  }
